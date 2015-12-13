@@ -1,0 +1,321 @@
+/***********************************Header*/
+.inlogo{
+    width: 350px;
+    margin: 20px 0;
+}
+.inlogo img{
+    width: 100%;
+}
+/****options in header*/
+.opthead{
+    color:#fff;
+    margin:-100px 10px 150px 0;
+    font: 13px Verdana;
+}
+.opthead li{
+    list-style-type: none;
+    float:right;
+    font: 15px Verdana;
+    text-transform: uppercase;
+    border-left: 1px solid #ddd;
+
+}
+
+.opthead li a{
+    padding: 20px;
+
+}
+.opthead li a:hover{
+    background: #fff;
+    color:#3365a1;
+}
+.addbutton{
+    width: 40px;
+}
+.active{
+    width: 23px;
+    margin-top: -5px;
+}
+/************************************TABLE IN***/
+table input{
+    width:90%;
+    padding: 3px;
+    font: 12px Verdana;
+}
+table textarea{
+    height: 60px;
+    padding: 3px;
+    font: 12px Verdana;
+}
+.notes textarea{width:700px;
+       max-width: 700px;}
+.dates textarea{width:500px;
+       max-width: 500px;}
+.tableborders{
+    width: 850px;
+    padding: 25px;
+}
+.intable{
+    width:100%;
+    border-collapse: collapse;
+    text-align: left
+}
+.intable thead{
+    background: #3365a1;
+    color:#fff;
+    text-transform: uppercase;
+}
+.intable thead tr th:first-child, .intable tbody tr td:first-child{
+    width: 12px;
+}
+
+.intable tbody tr:hover{
+    background: #eee;
+}
+.intable td,th{max-width: 800px;
+               border:1px solid #ccc;
+               padding: 10px;
+               font: 13px Verdana;
+}
+
+
+
+/**********************************************INSIDE HEADING FOR ADMINS**/
+.inheading{
+    padding: 20px;
+}
+.inheading h2{
+    margin: 20px;
+    padding: 10px;
+    font: 20px Century Gothic;
+    text-align:left;
+}
+.inheading h1{
+    font: 22px Century Gothic;
+    padding: 20px;
+    margin: 10px;
+    border-top: 1px solid #3365a1;
+    color:#3365a1;
+    text-align:center;
+    text-transform: uppercase;
+}
+/*******************************Inside Search**/
+.menuonpage{
+    padding: 20px 30px 0 30px;
+
+}
+.searchin{
+    width: 200px;
+    float:right;
+}
+.searchin input{
+    width: 120px;
+    padding: 2px;
+    font: 12px Verdana;
+    margin-bottom: 10px;
+
+}
+.searchin img{
+    width: 30px;
+    padding:10px;
+    cursor:pointer;
+    margin-bottom: -20px;
+}
+.menu{
+    margin: -50px 0 50px 0;
+}
+.menu li{
+    list-style-type: none;
+    float:left;
+    padding: 5px;
+}
+.opbutton{
+    background: #ddd;
+    color:#000;
+    padding: 10px;
+    font: 12px Verdana;
+    border-radius: 2px;
+    width: 70px;
+}
+
+
+.datenote{
+    padding: 5px;
+    width: 150px;
+    float:right;
+}
+.datenote img{
+    width: 30px;
+    padding-right: 10px;
+    margin-bottom: 20px;
+    padding: 5px;
+    cursor: pointer;
+}
+.datenote img:hover{
+    background:#ddd;
+}
+
+/****************************************PAGESLIST UL***/
+.pages{
+    padding-bottom:20px;
+    margin-left: -40px;
+
+}
+.pages li{
+    float:left;
+    color:#3365a1;
+    padding:5px 10px;
+    list-style-type: none;
+    cursor:pointer;
+}
+.pages li:hover{
+    color:#000;
+}
+/*the menu In Head Button*/
+.menuihb{
+    width: 30px;
+    margin-top: 109px;
+    border-radius: 1px 20px 20px 1px;
+    cursor:pointer;
+    display:inline-block;
+}
+.menuihb:hover{
+    border-radius: 1px;
+}
+/*the real menu in the header*/
+.menuinhead{
+    margin: -30px 0 80px 0;
+}
+.menuinhead li{
+    list-style-type: none;
+    color:#000;
+    float:left;
+    display: block;
+    background: #3365a1;
+    padding-right: 10px; 
+}
+.menuinhead li a{
+    padding: 10px;
+    margin: 5px;
+    background: #fff;
+    border-radius: 1px;
+}
+.menuinhead li a:hover{
+    background: none;
+    color:#fff;
+}
+.menuinhead li:first-child{
+    padding-left: 40px;
+}
+/*thought of the day*/
+.think{
+    float:right;
+    color:#fff;
+    text-align: right;
+    font: italic 15px Tahoma;
+    padding: 10px 20px;
+    margin-top: 50px;
+}
+
+/********************************Page to Redact****/
+.box textarea{
+    padding: 20px;
+    font: 12px Verdana;
+    line-height: 18px;
+    width: 500px;
+    max-width: 505px;
+    min-height: 100px;
+    margin-bottom: 30px;
+}
+
+/*Settings*/
+.settings{
+    padding: 35px;
+}
+.settings input{
+    width: 100%;
+    padding: 5px;
+
+}
+.settings table{margin-bottom: 20px; border-collapse:collapse; border-top: 1px solid #ddd; width:100%;}
+
+.settings table tr td{
+    max-width: 200px;padding: 15px;
+    font: 15px Verdana;
+}
+.settbutt{
+    background: #3365a1;
+    color:#fff;
+    padding:10px;
+}
+
+.logos img{
+    width: 50px;
+    float: right;
+    margin-bottom: 20px;
+    border: 1px solid #fff;
+}
+.unis img{
+    margin:20px;
+    width: 400px;
+}
+.redactinstr{
+    margin: 0 20px;
+    display:inline-block;
+    width: 300px;
+    border-left: 1px solid #ccc;
+    padding: 0 10px;
+}
+
+/*University redact page, sections/boxes*/
+
+.unidered h3{
+    font: 15px Verdana;
+    color: #fff;
+    border-radius: 3px 3px 0 0;
+    background: #3365a1;
+    padding: 10px;
+    margin: 5px 25px;
+}
+
+.unidered textarea{
+    margin: 0 25px;
+    padding: 10px;
+    font: 12px Verdana;
+    line-height: 18px;
+    width: 380px;
+    max-width: 380px;
+    min-width: 380px;
+    min-height: 300px;
+    margin-bottom: 30px;
+}
+
+.instruct{
+    padding: 10px 20px 10px 30px;
+    font: 13px Verdana;
+    line-height: 20px;
+}
+.instruct h1{
+    font: 18px Century Gothic;
+    padding: 20px;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+.instruct div div{
+    padding: 10px 0;
+}
+.instruct div table{
+    border-collapse: collapse;
+    width: 100%;
+    
+}
+.instruct div table tr td:first-child{
+    font-weight: bold;
+}
+.instruct td{
+    padding: 10px;border: 1px solid #eee;
+   
+}
+.instruct img{
+    width:50px;
+}
