@@ -1,17 +1,15 @@
 <?php
 
-//session_cache_expire();
-//ob_start();
-/* ESTABLISH YOUR CONNECTION */
-$con = mysqli_connect('localhost', 'root', 'Godwithme21', 'abs1');
-mysqli_query($con, 'SET NAMES utf8');
-/* check connection */
-date_default_timezone_set('Europe/Sofia');
+$DBServer = '-'; 
+$DBUser   = '-';
+$DBPass   = '-';
+$DBName   = '-';
 
-if (mysqli_connect_errno()) {
-    
-    error($con);
-     exit();
+$con = new mysqli($DBServer, $DBUser, $DBPass, $DBName); 
+ 
+// Check Connection
+if ($con->connect_error) {
+  trigger_error('Database connection failed: '  . $con->connect_error, E_USER_ERROR);
 }
 
-$admin['email']="abs@abstudent.com";
+$admin['email']='alwaysbstudent@gmail.com';
