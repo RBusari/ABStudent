@@ -27,7 +27,7 @@ if (isset($_GET['passc'])) {
         </div>
         <div class="settings">
             <section>
-                <form action="php/phplogin.php" method="POST" enctype="multipart/form-data">
+                <form enctype="multipart/form-data" action="php/phplogin.php" method="POST">
                     <img id="secondb" class="infob" src="img/info.png" alt="info" title="Информация"/>
                     <div class="infobox" id="second">Моля попълнете посочените полета коректно. Снимка може да бъде запазена само във формат <b>"jpg"</b> и при размер по-малък от <b>485 KB</b>. <br><br>
                         При затруднения прочетете <a href="instructuni.php" target="_blank" class="link">наръчника</a>. </div><br>

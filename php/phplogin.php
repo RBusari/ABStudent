@@ -41,7 +41,7 @@ if (isset($_POST['login']) && empty($_SESSION)) {
 /* }
   include ('php1.php'); */
 
-
+/*Updating data from university settings*/
 if (isset($_POST['settings'])) {
     $id = $_SESSION['id'];
 
@@ -72,7 +72,7 @@ if (isset($_POST['settings'])) {
     $website = trim($_POST['website']);
     $website = mysqli_real_escape_string($con, $website);
     
-
+/*Checking wheteher the lenght and the size of the variables are as follows*/
     if (mb_strlen($uniname) > 100 or mb_strlen($city) > 100 or mb_strlen($moto) > 100 or mb_strlen($email) > 100 or mb_strlen($website) > 100) {
         $_SESSION['last_savedus']['uniname'] = $uniname;
         $_SESSION['last_savedus']['city'] = $city;
@@ -84,11 +84,15 @@ if (isset($_POST['settings'])) {
     } else {
         $sql = 'UPDATE users SET uniname="' . $uniname . '", city="' . $city . '", moto="' . $moto . '", email="' . $email . '", website="' . $website . '" WHERE user_id=' . $id;
         if (mysqli_query($con, $sql)) {
+            
             $allowed = array('jpg');
-            $filename1 = $_FILES['pic_logo']['name'];
-            $ext1 = pathinfo($filename1, PATHINFO_EXTENSION);
-            $filename2 = $_FILES['pic_uni']['name'];
-            $ext2 = pathinfo($filename2, PATHINFO_EXTENSION);
+            
+            $logo = $_FILES['pic_logo']['name'];
+            $ext1 = pathinfo($logo, PATHINFO_EXTENSION);
+            
+            $unipicture = $_FILES['pic_uni']['name'];
+            $ext2 = pathinfo($unipicture, PATHINFO_EXTENSION);
+            
             if ($_FILES['pic_logo']['error'] == 0 & in_array($ext1, $allowed) & $_FILES['pic_logo']['size'] < 500000) {
                 $_FILES['pic_logo']['name'] = 'pic_logo' . $id . '.jpg';
                 $pic_logo = $_FILES['pic_logo']['name'];
@@ -127,6 +131,8 @@ if (isset($_POST['settings'])) {
     }
 }
 
+
+/*Change the password - Part of Settings */
 if (isset($_POST['change_pass'])) {
     $id = $_SESSION['id'];
 
