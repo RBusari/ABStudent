@@ -50,8 +50,15 @@ function active($con, $table, $col, $b) {
     }
 }
 
-/*
-     * To change this license header, choose License Headers in Project Properties.
-     * To change this template file, choose Tools | Templates
-     * and open the template in the editor.
-     */    
+/*PASSWORD CRYPTING*/
+function pass_crypt($salt, $pass) {
+    $string = sha1(md5($salt) . $pass);
+    $sub_char=mb_substr($string, 4, 1);
+    $explode = explode($sub_char, $string);
+    $string1 = '';
+    for ($i = count($explode) - 1; $i >= 0; $i = $i - 1) {
+        $string1.=$sub_char . $explode[$i];
+    }
+    $string1 = mb_substr($string1, 1, 41);
+    return $string1;
+}
